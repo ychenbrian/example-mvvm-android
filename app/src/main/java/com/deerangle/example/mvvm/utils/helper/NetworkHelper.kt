@@ -1,4 +1,4 @@
-package com.deerangle.example.mvvm.utils.helpers
+package com.deerangle.example.mvvm.utils.helper
 
 import android.content.Context
 import android.net.ConnectivityManager

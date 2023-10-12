@@ -78,9 +78,6 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.4")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.4")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     // Core
     implementation("androidx.activity:activity-ktx:1.8.0")
@@ -106,10 +103,20 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp")
     implementation("com.squareup.okhttp3:logging-interceptor")
 
-    // Epoxy
+    // Epoxy - Do not upgrade to 5
     implementation("com.airbnb.android:epoxy:4.6.4")
     implementation("com.airbnb.android:epoxy-databinding:4.6.4")
     kapt("com.airbnb.android:epoxy-processor:4.6.4")
+
+    // Test
+    implementation("androidx.test.ext:junit-ktx:1.1.5")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    androidTestImplementation("androidx.test:runner:1.5.2")
+    androidTestImplementation("androidx.test:rules:1.5.0")
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.mockito:mockito-core:3.11.2")
+    testImplementation("androidx.arch.core:core-testing:2.2.0")
 }
 
 kapt {
