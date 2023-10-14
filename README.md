@@ -21,13 +21,12 @@ This is an Android project template written in Kotlin, designed to serve as a st
    ```bash
    git clone <repository_url>
    ```
-2. Obtain your NYT API Key from the NYT Developer Portal and add it to the app/secret.properties file:
+2. Obtain your NYT API Key from the NYT Developer Portal. Rename file `app/secret.properties.example` to `app/secret.properties`, and fill the API key:
 
    ```secret.properties
    apiKey=xxxxxx
    ```
-3. Provide your own Google Services file for Firebase integration.
-4. Build and run the app on your Android device or emulator.
+3. Build and run the app on your Android device or emulator.
 
 ## Fastlane Support
 This project includes Fastlane integration for automating common development tasks. You can customise Fastlane configurations according to your needs.
