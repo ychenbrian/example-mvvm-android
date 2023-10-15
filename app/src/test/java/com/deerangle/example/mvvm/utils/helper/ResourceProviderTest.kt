@@ -16,15 +16,15 @@ class ResourceProviderTest {
     private lateinit var resourceProvider: ResourceProvider
 
     @Mock
-    private lateinit var mockContext: Context
+    private lateinit var context: Context
 
     @Mock
     private lateinit var resources: Resources
 
     @Before
     fun setUp() {
-        resourceProvider = ResourceProviderImpl(mockContext)
-        Mockito.`when`(mockContext.resources).thenReturn(resources)
+        resourceProvider = ResourceProviderImpl(context)
+        Mockito.`when`(context.resources).thenReturn(resources)
     }
 
     @Test
