@@ -37,12 +37,12 @@ abstract class BaseTest {
 
     @Before
     open fun setup() {
-        Mockito.`when`(context.getSystemService(Context.CONNECTIVITY_SERVICE)).thenReturn(connectivityManager)
-        Mockito.`when`(connectivityManager.activeNetwork).thenReturn(network)
-        Mockito.`when`(connectivityManager.getNetworkCapabilities(network)).thenReturn(networkCapabilities)
+        Mockito.lenient().`when`(context.getSystemService(Context.CONNECTIVITY_SERVICE)).thenReturn(connectivityManager)
+        Mockito.lenient().`when`(connectivityManager.activeNetwork).thenReturn(network)
+        Mockito.lenient().`when`(connectivityManager.getNetworkCapabilities(network)).thenReturn(networkCapabilities)
         networkHelper = NetworkHelper(context)
 
-        Mockito.`when`(context.resources).thenReturn(resources)
+        Mockito.lenient().`when`(context.resources).thenReturn(resources)
         resourceProvider = ResourceProviderImpl(context)
 
         resourceInitializer = TestResourceInitializer(resources)

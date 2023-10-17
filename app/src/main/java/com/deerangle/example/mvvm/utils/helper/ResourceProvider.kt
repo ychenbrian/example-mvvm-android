@@ -57,22 +57,3 @@ class ResourceProviderImpl
             @BoolRes resourceIdentifier: Int,
         ): Boolean = context.resources.getBoolean(resourceIdentifier)
     }
-
-// interface ResourceProvider {
-//    fun getString(@StringRes resId: Int): String
-//    fun getColor(@ColorRes resId: Int): Int
-//    // Add more methods as needed
-// }
-//
-// // A default implementation that uses the application context
-// class ResourceProviderImpl @Inject constructor(
-//    @ApplicationContext private val context: Context
-// ) : ResourceProvider {
-//    override fun getString(resId: Int): String {
-//        return context.getString(resId)
-//    }
-//
-//    override fun getColor(resId: Int): Int {
-//        return ContextCompat.getColor(context, resId)
-//    }
-// }

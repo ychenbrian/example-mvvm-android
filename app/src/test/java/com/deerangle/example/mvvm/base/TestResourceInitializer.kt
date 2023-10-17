@@ -12,7 +12,7 @@ class TestResourceInitializer(private val resources: Resources) {
             )
 
         for ((resId, value) in stringMappings) {
-            Mockito.`when`(resources.getString(resId)).thenReturn(value)
+            Mockito.lenient().`when`(resources.getString(resId)).thenReturn(value)
         }
     }
 }
