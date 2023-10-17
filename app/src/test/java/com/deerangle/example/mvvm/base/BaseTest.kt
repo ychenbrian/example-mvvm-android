@@ -1,4 +1,4 @@
-package com.deerangle.example.mvvm.utils.base
+package com.deerangle.example.mvvm.base
 
 import android.content.Context
 import android.content.res.Resources
@@ -18,6 +18,7 @@ import org.mockito.junit.MockitoJUnitRunner
 abstract class BaseTest {
     protected lateinit var networkHelper: NetworkHelper
     protected lateinit var resourceProvider: ResourceProvider
+    protected lateinit var resourceInitializer: TestResourceInitializer
 
     @Mock
     protected lateinit var context: Context
@@ -43,5 +44,8 @@ abstract class BaseTest {
 
         Mockito.`when`(context.resources).thenReturn(resources)
         resourceProvider = ResourceProviderImpl(context)
+
+        resourceInitializer = TestResourceInitializer(resources)
+        resourceInitializer.initialize()
     }
 }

@@ -1,7 +1,7 @@
-package com.deerangle.example.mvvm.utils.helper
+package com.deerangle.example.mvvm.tests.helper
 
 import android.net.NetworkCapabilities
-import com.deerangle.example.mvvm.utils.base.BaseTest
+import com.deerangle.example.mvvm.base.BaseTest
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mockito

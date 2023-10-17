@@ -1,7 +1,7 @@
-package com.deerangle.example.mvvm.utils.helper
+package com.deerangle.example.mvvm.tests.helper
 
 import com.deerangle.example.mvvm.R
-import com.deerangle.example.mvvm.utils.base.BaseTest
+import com.deerangle.example.mvvm.base.BaseTest
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
