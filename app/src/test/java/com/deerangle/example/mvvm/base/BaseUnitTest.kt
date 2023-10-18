@@ -9,13 +9,10 @@ import com.deerangle.example.mvvm.utils.helper.NetworkHelper
 import com.deerangle.example.mvvm.utils.helper.ResourceProvider
 import com.deerangle.example.mvvm.utils.helper.ResourceProviderImpl
 import org.junit.Before
-import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.Mockito
-import org.mockito.junit.MockitoJUnitRunner
 
-@RunWith(MockitoJUnitRunner::class)
-abstract class BaseTest {
+abstract class BaseUnitTest {
     protected lateinit var networkHelper: NetworkHelper
     protected lateinit var resourceProvider: ResourceProvider
     protected lateinit var resourceInitializer: TestResourceInitializer

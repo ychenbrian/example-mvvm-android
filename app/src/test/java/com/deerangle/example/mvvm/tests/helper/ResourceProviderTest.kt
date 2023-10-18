@@ -1,14 +1,14 @@
 package com.deerangle.example.mvvm.tests.helper
 
 import com.deerangle.example.mvvm.R
-import com.deerangle.example.mvvm.base.BaseTest
+import com.deerangle.example.mvvm.base.BaseUnitTest
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
 
 @RunWith(MockitoJUnitRunner::class)
-class ResourceProviderTest : BaseTest() {
+class ResourceProviderTest : BaseUnitTest() {
     @Test
     fun getString_returnsCorrectValue() {
         val resId = R.string.no_internet_connection
