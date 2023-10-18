@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_book_image_width_medium">144dp</dimen>
+    <dimen name="dimen_book_image_height_medium">224dp</dimen>
+    <dimen name="dimen_book_rank_size_standard">16sp</dimen>
+</resources>

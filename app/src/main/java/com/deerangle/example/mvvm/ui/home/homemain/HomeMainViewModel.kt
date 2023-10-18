@@ -7,8 +7,10 @@ import androidx.lifecycle.viewModelScope
 import com.deerangle.example.mvvm.data.model.domain.Book
 import com.deerangle.example.mvvm.data.usecase.GetBooksUseCase
 import com.deerangle.example.mvvm.utils.core.Response
+import com.deerangle.example.mvvm.utils.extension.toIsoDateString
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import java.util.Date
 import javax.inject.Inject
 
 @HiltViewModel
@@ -23,7 +25,7 @@ class HomeMainViewModel
         fun fetchBooks() {
             viewModelScope.launch {
                 _books.postValue(Response.loading(null))
-                _books.postValue(getBooksUseCase.invoke("2023-09-01", "hardcover-fiction"))
+                _books.postValue(getBooksUseCase.invoke(Date().toIsoDateString(), "hardcover-fiction"))
             }
         }
     }
