@@ -28,4 +28,8 @@ class HomeMainViewModel
                 _books.postValue(getBooksUseCase.invoke(Date().toIsoDateString(), "hardcover-fiction"))
             }
         }
+
+        fun onSeeAllClick() {
+            // TODO: navigate to the book list page
+        }
     }

@@ -13,8 +13,9 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minHeight="320dp"
-        android:padding="8dp">
+        android:minHeight="316dp"
+        android:paddingHorizontal="@dimen/padding_default"
+        android:paddingVertical="@dimen/padding_medium">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/item_book_card_cv_image"
@@ -30,8 +31,8 @@
                 android:layout_height="wrap_content">
 
                 <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="@dimen/dimen_book_image_width_medium"
-                    android:layout_height="@dimen/dimen_book_image_height_medium"
+                    android:layout_width="@dimen/book_image_width_medium"
+                    android:layout_height="@dimen/book_image_height_medium"
                     android:scaleType="fitXY"
                     app:imageUrl="@{data.bookImage}"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -43,14 +44,14 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/color_book_rank_background_gray"
+                    android:background="@color/book_rank_background_gray"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
                     <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/item_book_card_iv_rank"
-                        android:layout_width="@dimen/dimen_book_rank_size_standard"
-                        android:layout_height="@dimen/dimen_book_rank_size_standard"
+                        android:layout_width="@dimen/book_ranking_text_size"
+                        android:layout_height="@dimen/book_ranking_text_size"
                         android:layout_gravity="center"
                         android:layout_marginVertical="4dp"
                         android:layout_marginStart="8dp"
@@ -58,7 +59,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:tint="@color/color_book_rank_icon_yellow" />
+                        app:tint="@color/book_rank_icon_yellow" />
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/item_book_card_tv_rank"
@@ -91,7 +92,7 @@
             android:maxLines="2"
             android:paddingHorizontal="4dp"
             android:text="@{data.title}"
-            android:textColor="@color/color_book_title_black"
+            android:textColor="@color/book_title_black"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@id/item_book_card_cv_image"
             app:layout_constraintStart_toStartOf="@id/item_book_card_cv_image"
@@ -107,7 +108,7 @@
             android:maxLines="2"
             android:paddingHorizontal="4dp"
             android:text="@{data.author}"
-            android:textColor="@color/color_book_author_gray"
+            android:textColor="@color/book_author_gray"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@id/item_book_card_cv_image"

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="dimen_book_image_width_medium">144dp</dimen>
-    <dimen name="dimen_book_image_height_medium">224dp</dimen>
-    <dimen name="dimen_book_rank_size_standard">16sp</dimen>
+    <dimen name="padding_default">16dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_touch_area">4dp</dimen>
+    <dimen name="book_image_width_medium">144dp</dimen>
+    <dimen name="book_image_height_medium">224dp</dimen>
+    <dimen name="book_ranking_text_size">16sp</dimen>
+    <dimen name="ranking_title_size">20sp</dimen>
+    <dimen name="see_all_text_size">16sp</dimen>
 </resources>
